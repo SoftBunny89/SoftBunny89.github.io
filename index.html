@@ -1,48 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoftBunny89</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background-color: #1a1a1a;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             font-family: Arial, sans-serif;
-            margin: 0;
+            min-height: 100vh;
             padding: 20px;
-            text-align: center;
         }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+
         h1 {
             font-size: 3em;
-            margin-top: 50px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        p {
+
+        .subtitle {
             font-size: 1.2em;
-            line-height: 1.6;
+            opacity: 0.9;
         }
-        a {
-            color: #ffcc00;
+
+        nav {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        nav a {
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .nav {
-            margin-top: 30px;
-        }
-        .nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             font-size: 1.1em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .content {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .content p {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome!</h1>
-    <p>Hi! I'm SoftBunny89</p>
-    
-    <div class="nav">
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
+    <div class="container">
+        <header>
+            <h1>Welcome!</h1>
+            <p class="subtitle">I'm SoftBunny89</p>
+        </header>
+
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+        </nav>
+
+        <div class="content">
+            <p>Hey! Welcome to my website. I'm still building this out, so check back soon!</p>
+            <p>Feel free to explore and learn more about me on the About page.</p>
+        </div>
     </div>
 </body>
 </html>
